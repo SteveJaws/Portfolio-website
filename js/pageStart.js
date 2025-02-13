@@ -67,5 +67,13 @@ function createLogoLetters(){
         }, 500 * i);
 
         logoDiv.appendChild(logoLetter);
+
+        setTimeout(function(){
+            logoLetter.classList.add("logo-letter-anim-fly-up");
+        }, 500 * i + 2000);
     }
+
+    setTimeout(() => {
+        logoDiv.remove();
+    },14000);
 }
