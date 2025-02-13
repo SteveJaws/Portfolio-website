@@ -1,0 +1,58 @@
+.page-button-div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    gap: 10%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.page-button{
+    margin: auto;
+    min-width: 20vh;
+    height: 80vh;
+    border-radius: 10px;
+    transform: translateY(80vh);
+    background-color: white;
+    transition: all ease-in-out 0.5s;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding-top: 10px;
+    animation: pageButtonSpawn 1s;
+}
+
+.page-button:hover{
+    transform: translateY(70vh);
+}
+
+@keyframes pageButtonSpawn{
+    0%{
+        transform: translateY(100vh);
+    }
+    50%{
+        transform: translateY(60vh);
+    }
+    100%{
+        transform: translateY(80vh);
+    }
+}
+
+.page-button-idle{
+    animation: pageButtonIdle 3s infinite;
+}
+
+@keyframes pageButtonIdle{
+    0%{
+        transform: translateY(80vh);
+    }
+    50%{
+        transform: translateY(76vh);
+    }
+    100%{
+        transform: translateY(80vh);
+    }
+}

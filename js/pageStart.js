@@ -7,7 +7,6 @@ fetch('./js/pages.json').then(response => {
 })
 
 function welcome(){
-
     document.getElementById("startText").classList.add("start-text-remove");
 
     let welcomeDiv = document.getElementById("welcome");
@@ -86,15 +85,26 @@ function createLogoLetters(){
 
     setTimeout(() => {
         logoDiv.remove();
+        document.getElementById("startText").remove();
 
         createHomeScreen();
     },13000);
 }
 
 function createHomeScreen(){    
+    let pageButtonDiv = document.getElementById("pageButtonDiv");
+
     for(let i = 0; i < pages.length; i++){
         setTimeout(() => {
-            console.log("creating " + pages[i].name + " button");
-        }, 500 * i);
+            let pageButton = document.createElement("div");
+            pageButton.classList.add("page-button");
+            pageButton.innerHTML = pages[i].name;
+
+            pageButtonDiv.appendChild(pageButton);
+
+            setTimeout(() => {
+                pageButton.classList.add("page-button-idle");
+            }, 250 * i);
+        }, 250 * i);
     }
 }
