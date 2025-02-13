@@ -1,0 +1,85 @@
+.logo-div {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4%;
+    overflow: scroll;
+}
+
+.logo-letter {
+    background-color: blue;
+    min-width: 9vw;
+    height: 9vw;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9vw;
+    opacity: 0;
+}
+
+.logo-letter-anim-top {
+    animation: letterFlyInTop 2s forwards;
+}
+
+@keyframes letterFlyInTop {
+    0% {
+        transform: translateY(-100vh); /* Start above the viewport */
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0); /* End at the final position */
+        opacity: 1;
+    }
+}
+
+.logo-letter-anim-left {
+    animation: letterFlyInLeft 2s forwards;
+}
+
+@keyframes letterFlyInLeft {
+    0% {
+        transform: translateX(-100vw); /* Start to the left of the viewport */
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0); /* End at the final position */
+        opacity: 1;
+    }
+}
+
+.logo-letter-anim-right {
+    animation: letterFlyInRight 2s forwards;
+}
+
+@keyframes letterFlyInRight {
+    0% {
+        transform: translateX(100vw); /* Start to the right of the viewport */
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0); /* End at the final position */
+        opacity: 1;
+    }
+}
+
+.logo-letter-anim-bottom {
+    animation: letterFlyInBottom 2s forwards;
+}
+
+@keyframes letterFlyInBottom {
+    0% {
+        transform: translateY(100vh); /* Start below the viewport */
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0); /* End at the final position */
+        opacity: 1;
+    }
+}

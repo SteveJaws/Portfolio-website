@@ -4,4 +4,68 @@ function welcome(){
 
     welcomeDiv.classList.add("menu-state")
     page.classList.add("page-state")
+
+    setTimeout(() => {
+        createLogoLetters();
+    }, 4500); //has to be the same amount of time it takes for the opening animation to finish
+}
+
+function createLogoLetters(){
+    let welcome = [
+        {
+            "letter": "W",
+            "color": "yellow",
+            "direction": "top",
+        },
+        {
+            "letter": "E",
+            "color": "green",
+            "direction": "right",
+        },
+        {
+            "letter": "L",
+            "color": "blue",
+            "direction": "bottom",
+        },
+        {
+            "letter": "C",
+            "color": "red",
+            "direction": "left",
+        },
+        {
+            "letter": "O",
+            "color": "purple",
+            "direction": "top",
+        },
+        {
+            "letter": "M",
+            "color": "orange",
+            "direction": "right",
+        },
+        {
+            "letter": "E",
+            "color": "yellow",
+            "direction": "bottom",
+        }
+    ];
+
+    let logoDiv = document.getElementById("logoDiv");
+
+
+    for(let i = 0; i < welcome.length; i++){
+        console.log(welcome[i].letter);
+        let logoLetter = document.createElement("div");
+
+        logoLetter.classList.add("logo-letter");
+
+        logoLetter.innerHTML = welcome[i].letter;
+        logoLetter.style.backgroundColor = welcome[i].color;
+
+        setTimeout(function(){
+            console.log('animating');
+            logoLetter.classList.add("logo-letter-anim-" + welcome[i].direction);
+        }, 500 * i);
+
+        logoDiv.appendChild(logoLetter);
+    }
 }
