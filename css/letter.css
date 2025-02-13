@@ -85,7 +85,7 @@
 }
 
 .logo-letter-anim-fly-up{
-    animation: letterHoverFlyUp 8s forwards;
+    animation: letterHoverFlyUp 4s forwards;
 }
 
 @keyframes letterHoverFlyUp{
@@ -93,20 +93,12 @@
         transform: translateY(0) rotate(0deg);
         opacity: 1;
     }
-    10%{
-        transform: translateY(-5vw) rotate(8deg);
-        opacity: 1;
-    }
     30%{
-        transform: translateY(5vw) rotate(-8deg);
+        transform: translateY(-5vw) rotate(-8deg);
         opacity: 1;
     }
-    50%{
-        transform: translateY(-5vw) rotate(8deg);
-        opacity: 1;
-    }
-    70%{
-        transform: translateY(5vw) rotate(-8deg);
+    60%{
+        transform: translateY(5vw) rotate(8deg);
         opacity: 1;
     }
     100%{

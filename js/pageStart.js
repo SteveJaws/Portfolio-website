@@ -88,11 +88,15 @@ function createLogoLetters(){
         document.getElementById("startText").remove();
 
         createHomeScreen();
-    },13000);
+    },9000);
 }
 
 function createHomeScreen(){    
     let pageButtonDiv = document.getElementById("pageButtonDiv");
+
+    homeScreen = true;
+
+    document.getElementById("swipeCommand").style.opacity = 1;
 
     for(let i = 0; i < pages.length; i++){
         setTimeout(() => {
