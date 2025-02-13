@@ -1,4 +1,15 @@
+let pages = [];
+
+fetch('./js/pages.json').then(response => {
+    return response.json();
+}).then(data => {
+    pages = data.pages;
+})
+
 function welcome(){
+
+    document.getElementById("startText").classList.add("start-text-remove");
+
     let welcomeDiv = document.getElementById("welcome");
     let page = document.getElementById("page");
 
@@ -75,5 +86,15 @@ function createLogoLetters(){
 
     setTimeout(() => {
         logoDiv.remove();
-    },14000);
+
+        createHomeScreen();
+    },13000);
+}
+
+function createHomeScreen(){    
+    for(let i = 0; i < pages.length; i++){
+        setTimeout(() => {
+            console.log("creating " + pages[i].name + " button");
+        }, 500 * i);
+    }
 }
