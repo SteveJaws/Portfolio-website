@@ -1,0 +1,64 @@
+.welcome{
+    width: 10vh;
+    height: 30vh;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: black;
+}
+
+@keyframes welcomeTransition{
+    0%{
+        top: 0;
+    }
+    15%{
+        top: 100%;
+    }
+    30%{
+        top: 80%;
+    }
+    50%{
+        top: 60%;
+    }
+    75%{
+        top: 40%;
+    }
+    100%{
+        top: -30%; /* has to be the same height as welcome div otherwise it will be visible at the top of the screen */
+    }
+}
+
+.menu-state{
+    animation: welcomeTransition 4s forwards;
+}
+
+.page-state{
+    animation: pageTransition 4s forwards;
+}
+
+@keyframes pageTransition{ /* so in the first animation 15% = top: 100%; in this one you have to do 100% + height of welcome div */
+    0%{
+        top: 0;
+        opacity: 0;
+    }
+    15%{
+        opacity: 0;
+        top: 130%;
+    }
+    30%{
+        opacity: 1;
+        top: 110%;
+    }
+    50%{
+        opacity: 1;
+        top: 90%;
+    }
+    75%{
+        opacity: 1;
+        top: 70%;
+    }
+    100%{
+        opacity: 1;
+        top: 0%; /* has to be the same height as welcome otherwise it will be visible at the top of the screen */
+    }
+}
