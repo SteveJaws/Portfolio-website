@@ -1,31 +1,16 @@
 {
     "pages": [
         {
-            "name": "Home"
+            "name": "About",
+            "color": "rgb(30,144,255, 0.5)"
         },
         {
-            "name": "About"
+            "name": "Projects",
+            "color": "rgb(255, 3, 3, 0.5)"
         },
         {
-            "name": "Contact"
-        },
-        {
-            "name": "Contact"
-        },
-        {
-            "name": "3"
-        },
-        {
-            "name": "Contact"
-        },
-        {
-            "name": "Contact"
-        },
-        {
-            "name": "Contact"
-        },
-        {
-            "name": "Contact"
+            "name": "Contact",
+            "color": "rgb(20, 255, 3, 0.5)"
         }
     ]
 }

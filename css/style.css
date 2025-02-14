@@ -6,9 +6,8 @@ body{
 
 /* background-color: rgb(232, 234, 236); coole background color */
 
-.page{
+.home{
     width: 100%;
-    /* height: 100vh; */
     min-height: 100%;
     position: fixed;
     top: 100%;

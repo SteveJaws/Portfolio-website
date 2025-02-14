@@ -1,5 +1,7 @@
 let pages = [];
 
+let pageButtons = [];
+
 fetch('./js/pages.json').then(response => {
     return response.json();
 }).then(data => {
@@ -10,10 +12,10 @@ function welcome(){
     document.getElementById("startText").classList.add("start-text-remove");
 
     let welcomeDiv = document.getElementById("welcome");
-    let page = document.getElementById("page");
+    let home = document.getElementById("home");
 
     welcomeDiv.classList.add("menu-state")
-    page.classList.add("page-state")
+    home.classList.add("home-state")
 
     setTimeout(() => {
         createLogoLetters();
@@ -101,14 +103,23 @@ function createHomeScreen(){
     for(let i = 0; i < pages.length; i++){
         setTimeout(() => {
             let pageButton = document.createElement("div");
+
+            pageButtons.push(pageButton);
+
             pageButton.classList.add("page-button");
             pageButton.innerHTML = pages[i].name;
+            pageButton.style.backgroundColor = pages[i].color;
+            pageButton.style.color = "white";
 
             pageButtonDiv.appendChild(pageButton);
 
             setTimeout(() => {
                 pageButton.classList.add("page-button-idle");
             }, 250 * i);
+
+            pageButton.addEventListener("click", () => {
+                clickedPageButton(pages[i]);
+            });
         }, 250 * i);
     }
 }

@@ -98,11 +98,11 @@
     animation: welcomeTransition 4s forwards;
 }
 
-.page-state{
-    animation: pageTransition 4s forwards;
+.home-state{
+    animation: homeTransition 4s forwards;
 }
 
-@keyframes pageTransition{ /* so in the first animation 15% = top: 100%; in this one you have to do 100% + height of welcome div */
+@keyframes homeTransition{ /* so in the first animation 15% = top: 100%; in this one you have to do 100% + height of welcome div */
     0%{
         top: 0;
         opacity: 0;
