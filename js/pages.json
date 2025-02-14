@@ -6,7 +6,7 @@
             "pageBuilder": [ 
                 {
                     "type": "image-big-block",
-                    "image": "../media/images/me.jpg"
+                    "image": "https://github.com/SteveJaws/Portfolio-website/blob/main/media/images/me.jpg?raw=true"
                 },
                 {
                     "type": "text-block",
@@ -20,7 +20,7 @@
             "pageBuilder": [
                 {
                     "type": "image-block",
-                    "image": "../media/images/foto.png"
+                    "image": "https://github.com/SteveJaws/Portfolio-website/blob/main/media/images/foto.png?raw=true"
                 },
                 {
                     "type": "text-block",
