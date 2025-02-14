@@ -12,7 +12,7 @@
 }
 
 .page > div{
-    margin: 4%;
+    margin: 2vh;
 }
 
 @keyframes openPage{
@@ -148,12 +148,38 @@
     background-repeat: no-repeat;
 }
 
+.image-big-block{
+    opacity: 0;
+    width: 40vh;
+    min-height: 40vh;
+    border-radius: 10%; 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .text-block{
     opacity: 0;
-    width: 50vh;
+    width: 90%;
     min-height: fit-content;
     word-wrap: break-word;
     text-align: center;
+}
+
+.visit-button-block{
+    width: 20%;
+    min-height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.visit-button-block:hover{
+    cursor: pointer;
+    scale: 1.2;
 }
 
 .close-page{

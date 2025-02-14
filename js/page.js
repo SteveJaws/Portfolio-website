@@ -49,9 +49,17 @@ function openPage(page){
                 case "image-block":
                     pageBlock.style.backgroundImage = "url(" + page.pageBuilder[i].image + ")";
                     break;
+                case "image-big-block":
+                    pageBlock.style.backgroundImage = "url(" + page.pageBuilder[i].image + ")";
+                    break;
                 case "text-block":
                     pageBlock.innerHTML = page.pageBuilder[i].text;
                     break;
+                case "visit-button-block":
+                    pageBlock.innerHTML = "Visit";
+                    pageBlock.addEventListener("click", () => {
+                        window.open(page.pageBuilder[i].link);
+                    });
             }
     
             setTimeout(() => {

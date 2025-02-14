@@ -5,8 +5,8 @@
             "color": "rgb(30,144,255, 0.5)",
             "pageBuilder": [ 
                 {
-                    "type": "image-block",
-                    "image": "../media/images/foto.png"
+                    "type": "image-big-block",
+                    "image": "../media/images/me.jpg"
                 },
                 {
                     "type": "text-block",
@@ -19,28 +19,16 @@
             "color": "rgb(255, 3, 3, 0.5)",
             "pageBuilder": [
                 {
-                    "type": "text-block",
-                    "text": "This is the projects page"
-                }
-            ]
-        },
-        {
-            "name": "CONTACT",
-            "color": "rgb(20, 255, 3, 0.5)",
-            "pageBuilder": [
+                    "type": "image-block",
+                    "image": "../media/images/foto.png"
+                },
                 {
                     "type": "text-block",
-                    "text": "This is the contact page"
-                }
-            ]
-        },
-        {
-            "name": "CONTACT",
-            "color": "rgb(20, 255, 3, 0.5)",
-            "pageBuilder": [
+                    "text": "This is a project"
+                },
                 {
-                    "type": "text-block",
-                    "text": "This is the contact page"
+                    "type": "visit-button-block",
+                    "link": "https://www.youtube.com"
                 }
             ]
         },
