@@ -1,3 +1,7 @@
+let pages = [];
+
+let pageButtons = [];
+
 function createHomeScreen(firstTime = true){    
     homeScreen = true;
 

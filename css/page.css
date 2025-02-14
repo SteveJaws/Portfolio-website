@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    animation: openPage 3s forwards;
+    animation: openPage 2s forwards;
     background-color: rgb(255, 3, 3, 0.5);
     overflow-y: scroll;
 }
@@ -46,25 +46,13 @@
         height: 60vh;
         border-radius: 20px;
     }
-    50%{
-        transform: translateY(15vh);
-        width: 22%;
-        height: 50vh;
-        border-radius: 20px;
-    }
-    60%{
-        transform: translateY(15vh);
-        width: 10%;
-        height: 60vh;
-        border-radius: 20px;
-    }
     70%{
         transform: translateY(15vh);
         width: 22%;
         height: 50vh;
         border-radius: 20px;
     }
-    80%{
+    90%{
         transform: translateY(15vh);
         width: 10%;
         height: 60vh;

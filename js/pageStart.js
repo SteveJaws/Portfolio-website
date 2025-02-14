@@ -1,7 +1,3 @@
-let pages = [];
-
-let pageButtons = [];
-
 let swipeCommand;
 
 fetch('./js/pages.json').then(response => {
@@ -20,7 +16,8 @@ function welcome(){
     home.classList.add("home-state")
 
     setTimeout(() => {
-        createLogoLetters();
+        createHomeScreen();
+        // createLogoLetters();
     }, 4500); //has to be the same amount of time it takes for the opening animation to finish
 }
 
