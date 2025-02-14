@@ -33,6 +33,26 @@
                     "text": "This is the contact page"
                 }
             ]
+        },
+        {
+            "name": "CONTACT",
+            "color": "rgb(20, 255, 3, 0.5)",
+            "pageBuilder": [
+                {
+                    "type": "text-block",
+                    "text": "This is the contact page"
+                }
+            ]
+        },
+        {
+            "name": "CONTACT",
+            "color": "rgb(20, 255, 3, 0.5)",
+            "pageBuilder": [
+                {
+                    "type": "text-block",
+                    "text": "This is the contact page"
+                }
+            ]
         }
     ]
 }

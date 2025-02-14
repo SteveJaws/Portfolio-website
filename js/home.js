@@ -11,6 +11,8 @@ function createHomeScreen(){
 
     document.getElementById("home").appendChild(swipeCommand);
 
+    pageButtons = [];
+
     for(let i = 0; i < pages.length; i++){
         let pageButton = document.createElement("div");
 

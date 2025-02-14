@@ -18,7 +18,11 @@ function openPage(page){
                 backButton.innerHTML = "<-";
 
                 backButton.addEventListener("click", () => {
-                    console.log("back button clicked");
+                    pageDiv.classList.add("close-page");
+
+                    setTimeout(() => {
+                        createHomeScreen();
+                    },2000)
                 });
 
                 pageDiv.appendChild(backButton);

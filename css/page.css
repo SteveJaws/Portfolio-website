@@ -155,3 +155,35 @@
     word-wrap: break-word;
     text-align: center;
 }
+
+.close-page{
+    animation: closePage 2s forwards;
+}
+
+@keyframes closePage{
+    0%{
+        transform: translateY(0);
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+        backdrop-filter: blur(10px);
+    }
+    25%{
+        transform: translateY(15vh);
+        width: 22%;
+        height: 50vh;
+        border-radius: 20px;
+    }
+    50%{
+        transform: translateY(15vh);
+        width: 10%;
+        height: 60vh;
+        border-radius: 20px;
+    }
+    100%{
+        transform: translateY(100vh);
+        width: 10%;
+        height: 0;
+        border-radius: 20px;
+    }
+}
