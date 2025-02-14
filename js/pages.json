@@ -39,6 +39,10 @@
                 {
                     "type": "text-block",
                     "text": "This is the contact page"
+                },
+                {
+                    "type": "image-big-block",
+                    "image": "https://github.com/SteveJaws/Portfolio-website/blob/main/media/images/foto.png?raw=true"
                 }
             ]
         }
