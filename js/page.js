@@ -10,6 +10,20 @@ function openPage(page){
 
     setTimeout(() => {
         for(let i = 0; i < page.pageBuilder.length; i++){
+            if(i == 0){
+                let backButton = document.createElement("div");
+
+                backButton.classList.add("back-button");
+
+                backButton.innerHTML = "<-";
+
+                backButton.addEventListener("click", () => {
+                    console.log("back button clicked");
+                });
+
+                pageDiv.appendChild(backButton);
+            }
+
             let pageBlock = document.createElement("div");
     
             pageBlock.classList.add(page.pageBuilder[i].type);
