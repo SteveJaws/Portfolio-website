@@ -1,15 +1,25 @@
 {
     "pages": [
         {
-            "name": "About",
-            "color": "rgb(30,144,255, 0.5)"
+            "name": "ABOUT",
+            "color": "rgb(30,144,255, 0.5)",
+            "pageBuilder": [ 
+                {
+                    "type": "image-block",
+                    "image": "../media/images/foto.png"
+                },
+                {
+                    "type": "text-block",
+                    "text": "This is the about page"
+                }
+            ]
         },
         {
-            "name": "Projects",
+            "name": "PROJECTS",
             "color": "rgb(255, 3, 3, 0.5)"
         },
         {
-            "name": "Contact",
+            "name": "CONTACT",
             "color": "rgb(20, 255, 3, 0.5)"
         }
     ]

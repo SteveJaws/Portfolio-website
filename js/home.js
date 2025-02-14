@@ -1,4 +1,53 @@
+function createHomeScreen(){    
+    homeScreen = true;
+
+    swipeCommand = document.createElement("div");
+
+    swipeCommand.classList.add("swipe-command");
+
+    swipeCommand.innerHTML = "scroll or swipe sideways to navigate between the page buttons";
+
+    swipeCommand.id = "swipeCommand";
+
+    document.getElementById("home").appendChild(swipeCommand);
+
+    for(let i = 0; i < pages.length; i++){
+        let pageButton = document.createElement("div");
+
+        pageButtons.push(pageButton);
+
+        pageButton.classList.add("page-button");
+        pageButton.innerHTML = pages[i].name;
+        pageButton.style.backgroundColor = pages[i].color;
+        pageButton.style.color = "white";
+
+        pageButton.addEventListener("click", () => {
+            clickedPageButton(pages[i]);
+        });
+
+        console.log(pageButtons.length);
+
+        if(pageButtons.length == pages.length){
+            createHomeButtons(pageButtons);
+        }
+    }
+}
+
+function createHomeButtons(pageButtonsArray){
+    for(let i = 0; i < pageButtonsArray.length; i++){
+        document.getElementById("pageButtonDiv").appendChild(pageButtonsArray[i]);
+
+        setTimeout(() => {
+            setTimeout(() => {
+                pageButtonsArray[i].classList.add("page-button-idle");
+            }, 250 * i);
+        },1000)
+    }
+}
+
 function clickedPageButton(page){
+    homeScreen = false;
+
     for(let i = 0; i < pageButtons.length; i++){
         setTimeout(() => {
             pageButtons[i].classList.add("page-button-remove");

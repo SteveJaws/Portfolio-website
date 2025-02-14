@@ -2,6 +2,8 @@ let pages = [];
 
 let pageButtons = [];
 
+let swipeCommand;
+
 fetch('./js/pages.json').then(response => {
     return response.json();
 }).then(data => {
@@ -91,35 +93,4 @@ function createLogoLetters(){
 
         createHomeScreen();
     },9000);
-}
-
-function createHomeScreen(){    
-    let pageButtonDiv = document.getElementById("pageButtonDiv");
-
-    homeScreen = true;
-
-    document.getElementById("swipeCommand").style.opacity = 1;
-
-    for(let i = 0; i < pages.length; i++){
-        setTimeout(() => {
-            let pageButton = document.createElement("div");
-
-            pageButtons.push(pageButton);
-
-            pageButton.classList.add("page-button");
-            pageButton.innerHTML = pages[i].name;
-            pageButton.style.backgroundColor = pages[i].color;
-            pageButton.style.color = "white";
-
-            pageButtonDiv.appendChild(pageButton);
-
-            setTimeout(() => {
-                pageButton.classList.add("page-button-idle");
-            }, 250 * i);
-
-            pageButton.addEventListener("click", () => {
-                clickedPageButton(pages[i]);
-            });
-        }, 250 * i);
-    }
 }

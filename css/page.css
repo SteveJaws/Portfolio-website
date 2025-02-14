@@ -3,8 +3,16 @@
     height: 30vh;
     margin: auto;
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     animation: openPage 3s forwards;
     background-color: rgb(255, 3, 3, 0.5);
+    overflow-y: scroll;
+}
+
+.page > div{
+    margin: 4%;
 }
 
 @keyframes openPage{
@@ -71,8 +79,58 @@
     }
 }
 
-.about{
-    width: 100%;
-    height: 100%;
-    background-color: blue;
+.fly-in-left{
+    animation: flyInLeft 1s forwards;
+}
+
+@keyframes flyInLeft{
+    0%{
+        transform: translateX(-100vw);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(20vw);
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.fly-in-right{
+    animation: flyInRight 1s forwards;
+}
+
+@keyframes flyInRight{
+    0%{
+        transform: translateX(100vw);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(-20vw);
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.image-block{
+    opacity: 0;
+    width: 20vh;
+    min-height: 20vh;
+    border-radius: 10%; 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-block{
+    opacity: 0;
+    width: 50vh;
+    min-height: fit-content;
+    word-wrap: break-word;
+    text-align: center;
 }

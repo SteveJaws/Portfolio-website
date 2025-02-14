@@ -12,17 +12,19 @@
 
 .page-button{
     margin: auto;
-    min-width: 20vh;
+    min-width: 40px;
+    width: 20%;
+    max-width: 160px;
     height: 80vh;
     border-radius: 10px;
-    transform: translateY(80vh);
-    background-color: white;
-    transition: all ease-in-out 0.5s;
     display: flex;
-    align-items: start;
-    justify-content: center;
+    align-items: center;
+    justify-content: start;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
     padding-top: 10px;
-    animation: pageButtonSpawn 1s;
+    transition: all ease-in-out 0.5s;
+    animation: pageButtonSpawn 1s forwards;
 }
 
 .page-button:hover{ 
@@ -35,10 +37,10 @@
         transform: translateY(100vh);
     }
     50%{
-        transform: translateY(60vh);
+        transform: translateY(30vh);
     }
     100%{
-        transform: translateY(80vh);
+        transform: translateY(50vh);
     }
 }
 
@@ -48,13 +50,13 @@
 
 @keyframes pageButtonIdle{
     0%{
-        transform: translateY(80vh);
+        transform: translateY(50vh);
     }
     50%{
-        transform: translateY(71vh);
+        transform: translateY(30vh);
     }
     100%{
-        transform: translateY(80vh);
+        transform: translateY(50vh);
     }
 }
 
@@ -64,11 +66,11 @@
 
 @keyframes pageButtonRemove{
     0%{
-        transform: translateY(80vh);
+        transform: translateY(50vh);
         opacity: 1;
     }
     50%{
-        transform: translateY(60vh);
+        transform: translateY(80vh);
         opacity: 1;
     }
     100%{
