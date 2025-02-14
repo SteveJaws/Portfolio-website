@@ -1,15 +1,17 @@
-function createHomeScreen(){    
+function createHomeScreen(firstTime = true){    
     homeScreen = true;
 
-    swipeCommand = document.createElement("div");
+    if(firstTime == true){
+        swipeCommand = document.createElement("div");
 
-    swipeCommand.classList.add("swipe-command");
-
-    swipeCommand.innerHTML = "scroll or swipe sideways to navigate between the page buttons";
-
-    swipeCommand.id = "swipeCommand";
-
-    document.getElementById("home").appendChild(swipeCommand);
+        swipeCommand.classList.add("swipe-command");
+    
+        swipeCommand.innerHTML = "";
+    
+        swipeCommand.id = "swipeCommand";
+    
+        document.getElementById("home").appendChild(swipeCommand);
+    }
 
     pageButtons = [];
 

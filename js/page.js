@@ -20,8 +20,15 @@ function openPage(page){
                 backButton.addEventListener("click", () => {
                     pageDiv.classList.add("close-page");
 
+                    let pageContent = pageDiv.getElementsByTagName("div");
+
+                    for(let i = 0; i < pageContent.length; i++){
+                        pageContent[i].style.display = "none";
+                    }
+
                     setTimeout(() => {
-                        createHomeScreen();
+                        createHomeScreen(false);
+                        pageDiv.remove();
                     },2000)
                 });
 
