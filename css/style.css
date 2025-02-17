@@ -4,21 +4,17 @@ body{
     font-family: "poppins", serif;
 }
 
-@media (prefers-color-scheme: dark) {
-    body { background: #000000; } 
-    .home{ background: #333; }
-}
-
-@media (prefers-color-scheme: light) {
-    body { background: #000000; } 
-    .home{ background-color: rgb(232, 234, 236); }
-}
-
-/* background-color: rgb(232, 234, 236); coole background color */
-
 .home{
     width: 100%;
     min-height: 100%;
     position: fixed;
     top: 100%;
+    background-color: rgb(232, 234, 236);
 }
+
+@media (prefers-color-scheme: dark) {
+    body { background: #000000; } 
+    .home{ background: #333; }
+}
+
+/* background-color: rgb(232, 234, 236); coole background color */
