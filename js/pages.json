@@ -20,16 +20,28 @@
             "pageBuilder": [
                 {
                     "type": "image-block",
-                    "image": "https://github.com/SteveJaws/Portfolio-website/blob/main/media/images/foto.png?raw=true"
+                    "image": "https://github.com/SteveJaws/Portfolio-website/blob/main/media/images/deltarunefight.png?raw=true"
                 },
                 {
                     "type": "text-block",
-                    "text": "This is a project"
+                    "text": "This is a web version of an deltarune fight made in html, css and js. Funfact this was also my first project where i used object oriented programming"
                 },
                 {
                     "type": "visit-button-block",
-                    "link": "https://www.youtube.com"
-                }
+                    "link": "https://stevejaws.github.io/Deltarune-clone/game.html"
+                },
+                {
+                    "type": "image-block",
+                    "image": "https://github.com/SteveJaws/Portfolio-website/blob/main/media/images/undertalefight.png?raw=true"
+                },
+                {
+                    "type": "text-block",
+                    "text": "This is a web version of an undertale fight made in html, css and js. Funfact this was very early on in my programming learning journey"
+                },
+                {
+                    "type": "visit-button-block",
+                    "link": "https://stevejaws.github.io/undertalefight1/battle.html"
+                }    
             ]
         },
         {
