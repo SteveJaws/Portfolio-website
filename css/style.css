@@ -5,7 +5,8 @@ body{
 }
 
 @media (prefers-color-scheme: dark) {
-    body { background: #333; color: white; } 
+    body { background: #000000; color: white; } 
+    .home{ background: #333; color: white }
 }
 
 /* background-color: rgb(232, 234, 236); coole background color */
