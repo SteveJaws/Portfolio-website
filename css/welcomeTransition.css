@@ -38,6 +38,10 @@
     text-align: center;
 }
 
+@media (prefers-color-scheme: dark) {
+    .start-text{ color: white; }
+}
+
 .start-text-remove{
     animation: welcomeTextRemove 1s forwards;
 }
