@@ -4,6 +4,10 @@ body{
     font-family: "poppins", serif;
 }
 
+@media (prefers-color-scheme: dark) {
+    body { background: #333; color: white; } 
+}
+
 /* background-color: rgb(232, 234, 236); coole background color */
 
 .home{
