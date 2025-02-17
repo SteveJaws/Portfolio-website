@@ -9,6 +9,11 @@ body{
     .home{ background: #333; color: white; }
 }
 
+@media (prefers-color-scheme: light) {
+    body { background: #000000; color: white; } 
+    .home{ background-color: rgb(232, 234, 236); color: white; }
+}
+
 /* background-color: rgb(232, 234, 236); coole background color */
 
 .home{
@@ -16,5 +21,4 @@ body{
     min-height: 100%;
     position: fixed;
     top: 100%;
-    background-color: rgb(232, 234, 236);
 }
