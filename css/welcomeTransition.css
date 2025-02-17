@@ -2,6 +2,7 @@
     width: 10vh;
     height: 30vh;
     border-radius: 10px;
+    border: 1px solid white;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
