@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    animation: openPage 2s forwards;
+    animation: openPage 1.5s forwards;
     background-color: rgb(255, 3, 3, 0.5);
     overflow-y: scroll;
 }
@@ -22,14 +22,8 @@
         height: 30vh;
         border-radius: 20px;
     }
-    7%{ 
+    10%{ 
         transform: translateY(-20vh);
-        width: 70%;
-        height: 30vh;
-        border-radius: 20px;
-    }
-    13%{
-        transform: translateY(15vh);
         width: 70%;
         height: 30vh;
         border-radius: 20px;
@@ -40,19 +34,13 @@
         height: 30vh;
         border-radius: 20px;
     }
-    40%{
+    50%{
         transform: translateY(15vh);
-        width: 10%;
-        height: 60vh;
+        width: 70%;
+        height: 30vh;
         border-radius: 20px;
     }
-    70%{
-        transform: translateY(15vh);
-        width: 22%;
-        height: 50vh;
-        border-radius: 20px;
-    }
-    90%{
+    75%{
         transform: translateY(15vh);
         width: 10%;
         height: 60vh;
