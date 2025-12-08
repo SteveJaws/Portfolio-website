@@ -41,6 +41,10 @@
                 {
                     "type": "visit-button-block",
                     "link": "https://stevejaws.github.io/undertalefight1/battle.html"
+                },
+                {
+                    "type": "image-block",
+                    "link": "https://raw.githubusercontent.com/SteveJaws/Portfolio-website/refs/heads/main/media/images/wip.jpg"
                 }    
             ]
         },
